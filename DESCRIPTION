@@ -18,3 +18,4 @@ Imports:
     reticulate
 Remotes:
     ajrominger/pika
+RoxygenNote: 7.2.1
