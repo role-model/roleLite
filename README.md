@@ -7,9 +7,6 @@ A lightweight RoLE model
 
     devtools::install_github('role-model/roleLite')
 
-    ## Skipping install of 'roleLite' from a github remote, the SHA1 (70f16615) has not changed since last install.
-    ##   Use `force = TRUE` to force installation
-
     library(roleLite)
 
 ## Neutral simulation
