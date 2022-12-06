@@ -174,5 +174,3 @@ We could look at the SADs pre and post invasion as well
 
 ![](sim-abunds_files/figure-markdown_strict/invade-sad-3.png)
 
-Shortly after the invasion there is a noticeable change in the shape,
-but long after the invasion the shape seems to have settled back down.

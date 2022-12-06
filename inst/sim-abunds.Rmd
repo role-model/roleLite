@@ -167,5 +167,4 @@ plot(sort(abundPost$abund[abundPost$tstep == max(abundPost$tstep)],
      xlab = 'Rank', ylab = 'Abundance', main = 'Long after invasion')
 ```
 
-Shortly after the invasion there is a noticeable change in the shape, but long after the invasion the shape seems to have settled back down.
 
