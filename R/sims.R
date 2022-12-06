@@ -3,15 +3,18 @@
 #' @description Simulate a local community under the Unified Neutral Theory of
 #' Biodiversity.
 #'
-#' @param J
-#' @param Sm
-#' @param Jm
-#' @param nu
-#' @param m
-#' @param niter
-#' @param niterTimestep
-#' @param initLocal
-#' @param initMeta
+#' @param J number of individuals in the local community
+#' @param Sm number of species in the metacommunity
+#' @param Jm number of individuals in the metacommunity
+#' @param nu speciation probability (must be between 0 and 1)
+#' @param m immigration probability (must be between 0 and 1)
+#' @param niter number of iterations to run
+#' @param niterTimestep number of iterations to save output on
+#' @param initLocal initial state of the local community; if \code{NULL} (the
+#' default) it will be randomly drawn from metacommunity
+#' @param initMeta initial state of the meta community; if \code{NULL} (the
+#' default) it will be simulated as a log series parameterized by \code{Sm} and
+#' \code{Jm}
 #'
 #' @return a matrix with rows for timesteps and columns for each individual in
 #' the local community. The cells of the matrix are the species IDs. NOTE: it's

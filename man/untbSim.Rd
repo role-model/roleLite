@@ -17,7 +17,26 @@ untbSim(
 )
 }
 \arguments{
-\item{initMeta}{}
+\item{J}{number of individuals in the local community}
+
+\item{Sm}{number of species in the metacommunity}
+
+\item{Jm}{number of individuals in the metacommunity}
+
+\item{nu}{speciation probability (must be between 0 and 1)}
+
+\item{m}{immigration probability (must be between 0 and 1)}
+
+\item{niter}{number of iterations to run}
+
+\item{niterTimestep}{number of iterations to save output on}
+
+\item{initLocal}{initial state of the local community; if \code{NULL} (the
+default) it will be randomly drawn from metacommunity}
+
+\item{initMeta}{initial state of the meta community; if \code{NULL} (the
+default) it will be simulated as a log series parameterized by \code{Sm} and
+\code{Jm}}
 }
 \value{
 a matrix with rows for timesteps and columns for each individual in
