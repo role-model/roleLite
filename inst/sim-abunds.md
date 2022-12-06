@@ -1,8 +1,3 @@
-# roleLite
-
-A lightweight RoLE model
-
-
 ## Installation
 
     devtools::install_github('role-model/roleLite')
@@ -82,7 +77,7 @@ typically want to look at the final SAD. We can do that like this:
     plot(sort(finalSADComp, decreasing = TRUE), log = 'y', 
          xlab = 'Rank', ylab = 'Abundance')
 
-![](inst/sim-abunds_files/figure-markdown_strict/sad-viz-1.png)
+![](sim-abunds_files/figure-markdown_strict/sad-viz-1.png)
 
 We can also look at the timeseries of specific species like this:
 
@@ -92,7 +87,7 @@ We can also look at the timeseries of specific species like this:
     plot(sp10$tstep, sp10$abund, type = 'b', 
          xlab = 'Time step', ylab = 'Abundance')
 
-![](inst/sim-abunds_files/figure-markdown_strict/tseris-viz-1.png)
+![](sim-abunds_files/figure-markdown_strict/tseris-viz-1.png)
 
 ## Simulating purturbations
 
@@ -151,7 +146,7 @@ Finally let’s combine the two simulations and see what happened
     plot(abundInvader$tstep, abundInvader$abund, type = 'b',
          xlab = 'Timestep', ylab = 'Abundance')
 
-![](inst/sim-abunds_files/figure-markdown_strict/combo-1.png)
+![](sim-abunds_files/figure-markdown_strict/combo-1.png)
 
 If your plot’s x-axis starts at 10,000 it means the species wasn’t even
 present in the local community before the invasion.
@@ -163,21 +158,21 @@ We could look at the SADs pre and post invasion as well
          log = 'y', 
          xlab = 'Rank', ylab = 'Abundance', main = 'Right before invasion')
 
-![](inst/sim-abunds_files/figure-markdown_strict/invade-sad-1.png)
+![](sim-abunds_files/figure-markdown_strict/invade-sad-1.png)
 
     plot(sort(abundPost$abund[abundPost$tstep == 13000], 
               decreasing = TRUE), 
          log = 'y', 
          xlab = 'Rank', ylab = 'Abundance', main = 'Shortly after invasion')
 
-![](inst/sim-abunds_files/figure-markdown_strict/invade-sad-2.png)
+![](sim-abunds_files/figure-markdown_strict/invade-sad-2.png)
 
     plot(sort(abundPost$abund[abundPost$tstep == max(abundPost$tstep)], 
               decreasing = TRUE), 
          log = 'y', 
          xlab = 'Rank', ylab = 'Abundance', main = 'Long after invasion')
 
-![](inst/sim-abunds_files/figure-markdown_strict/invade-sad-3.png)
+![](sim-abunds_files/figure-markdown_strict/invade-sad-3.png)
 
 Shortly after the invasion there is a noticeable change in the shape,
 but long after the invasion the shape seems to have settled back down.
