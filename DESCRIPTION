@@ -14,8 +14,7 @@ Depends:
     R (>= 3.2)
 Imports: 
     ape,
-    pika, 
-    reticulate
+    pika
 Remotes:
     ajrominger/pika
 VignetteBuilder: knitr
